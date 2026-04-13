@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>CLASSLIST!!!</title>
+
+    <style>
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #ffeedc;
+    color: #8a6d3b;
+        }
+
+.container-box {
+    background: #fffdb5;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px #8a6d3b;
+    max-width: 500px;
+    padding: 40px;
+    margin: 80px auto;
+    border: 2px solid #B59D73;
+    text-align: center;
+        }
+
+        h1, h2 {
+    color: #c39b38;
+        }
+
+        input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #c39b38;
+        }
+
+ .btn-group {
+    display: flex;
+     gap: 10px;
+    justify-content: center;
+        }
+
+button {
+    padding: 10px 15px;
+    background-color: #ffc5c5;
+    border: 1px solid #8a6d3b;
+    border-radius: 8px;
+    font-weight: 600;
+        }
+
+button:hover {
+    background-color: #ffb3b3;
+        }
+
+.output-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff7e6;
+    border-radius: 10px;
+    border: 1px solid #c39b38;
+    text-align: left;
+    white-space: pre-line;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container-box">
+    <h1>My Classmates</h1>
+    <h2>Class of 25–26</h2>
+
+    <input type="text" id="username" placeholder="Name">
+    <input type="text" id="section" placeholder="Section">
+    <input type="text" id="fav" placeholder="Favorite Character">
+
+    <div class="btn-group">
+        <button py-click="AddClassmate">Add New Classmate</button>
+        <button py-click="ShowClassmates">Show Classlist</button>
+    </div>
+
+    <div class="output-box" id="signed"></div>
+    <div class="output-box" id="classmate-list"></div>
+</div>
+
+<script type="py" src="main.py"></script>
+
+</body>
+</html>
